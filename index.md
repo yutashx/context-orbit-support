@@ -17,8 +17,6 @@ You provide a compatible receiver, its address and its access token. ContextOrbi
 - [Setup, troubleshooting and contact]({{ '/support/' | relative_url }})
 - [Privacy policy]({{ '/privacy/' | relative_url }})
 
-These pages are prepared for publication. The privacy policy remains a draft until its effective date and release review are complete.
-
 ## Reference receiver
 
 The [reference receiver](https://github.com/yutashx/context-orbit-server) is software you may choose to run in your own environment. The developer does not host or manage your receiver or its data. You control installation, operation, access, backups, retention, deletion and any downstream use or sharing of records.

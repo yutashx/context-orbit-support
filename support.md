@@ -6,11 +6,9 @@ translation_url: /ja/support/
 ---
 # ContextOrbit support
 
-> Prepared for publication. App release and public-site verification are still pending.
-
 ## Requirements
 
-ContextOrbit is for users who operate their own compatible receiver. It is not a hosted storage subscription. You need a supported iPhone, the source permissions you choose to grant, and a receiver reachable from that phone. The current app requires iOS 26 or later.
+ContextOrbit is for users who operate their own compatible receiver. It is not a hosted storage subscription. You need a supported iPhone, the source permissions you choose to grant, and a receiver reachable from that phone. The app requires iOS 26 or later.
 
 Start with the [receiver instructions](https://github.com/yutashx/context-orbit-server#requirements-and-install). Use HTTPS for normal operation; an encrypted tunnel you operate, such as a Tailscale tailnet, can protect private HTTP. Private IPv4/CGNAT HTTP is accepted by the app without an extra opt-in; public HTTP is rejected. HTTP itself is unencrypted. The receiver must remain available when you want transfer to proceed. The phone can retain records while it is unavailable, but large imports and long offline periods need sufficient free space.
 
@@ -45,7 +43,7 @@ Check the selected types, permissions, available records and whether the source 
 
 ### Phone storage is growing
 
-Historical records can occupy gigabytes even without photos or videos. Pending records must remain until their receiver-save confirmation is validated. Automatic cleanup is currently disabled, so records can remain on the phone even after server storage is confirmed. Free other storage rather than deleting the app or its pending records. Receiver retention is separate.
+Historical records can occupy gigabytes even without photos or videos. Pending records must remain until their receiver-save confirmation is validated. The app does not automatically delete phone copies, so records can remain on the phone even after server storage is confirmed. Free other storage rather than deleting the app or its pending records. Receiver retention is separate.
 
 ### Background work is delayed
 

@@ -6,7 +6,7 @@ translation_url: /ja/privacy/
 ---
 # ContextOrbit privacy policy
 
-> Draft for release review. This policy is not yet effective; an effective date will be added before app distribution.
+Effective date: November 7, 2026
 
 ## What ContextOrbit does
 
@@ -22,7 +22,7 @@ Records can include values, units, times, source app/device metadata, original r
 
 The app also stores the configuration, installation identifier, collection progress, permission-request history, transfer state and server-storage confirmations needed to operate reliably. Your receiver access token is stored in the iOS Keychain.
 
-ContextOrbit does not collect your photo library. Reproductive/sexual-health and clinical health-record types are outside this release's collection scope. A permission request completing does not establish that every selected record is readable.
+ContextOrbit does not collect your photo library. Reproductive/sexual-health and clinical health-record types are not collected. A permission request completing does not establish that every selected record is readable.
 
 ## Where records go
 
@@ -36,13 +36,13 @@ Use HTTPS for normal operation. Private IPv4 HTTP, including Tailscale CGNAT add
 
 Records are stored on the phone before transfer. The app retains unconfirmed records until it validates the configured receiver's confirmation that the original records have been durably stored. A successful connection or HTTP response alone is not that confirmation.
 
-Automatic cleanup is currently disabled. Records can remain on the phone and occupy storage even after server storage is confirmed. Removing a phone copy does not delete the original record on your receiver.
+The app does not automatically delete records from the phone. Records can remain on the phone and occupy storage even after server storage is confirmed. Removing a phone copy does not delete the original record on your receiver.
 
 Unconfirmed records are not deleted because they are old, a source is turned off or paused, or a retry budget has been exhausted. Long offline periods and large historical imports can therefore use substantial phone storage.
 
 The app also retains configuration, progress, identity and transfer metadata needed to avoid duplicate or skipped work. These are separate from the record copies themselves.
 
-The app applies an iCloud Backup exclusion to its private storage directory and treats failure to apply it as a storage error. Actual device backup and locked-device behavior remain under verification. The receiver token is stored in the device-only Keychain and becomes accessible after the first unlock following a restart. ContextOrbit has no iCloud record-sync feature and does not control receiver backups.
+The app applies an iCloud Backup exclusion to its private storage directory and treats failure to apply it as a storage error. The receiver token is stored in the device-only Keychain and becomes accessible after the first unlock following a restart. ContextOrbit has no iCloud record-sync feature and does not control receiver backups.
 
 Uninstalling the app or losing the device can remove unconfirmed phone data. ContextOrbit is not a substitute for receiver backups and does not promise recovery after device loss.
 
