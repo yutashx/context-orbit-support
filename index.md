@@ -12,8 +12,6 @@ ContextOrbit transfers the Health records, location observations and motion acti
 
 You provide a compatible receiver, its address and its access token. ContextOrbit does not include developer-operated storage or an app account. Your receiver's hosting, networking and backups are separate from the app.
 
-See the App Store listing for the current price and availability. The listing is the source of truth for both.
-
 ## App documentation
 
 - [Setup, troubleshooting and contact]({{ '/support/' | relative_url }})

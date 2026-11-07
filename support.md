@@ -14,7 +14,7 @@ ContextOrbit is for users who operate their own compatible receiver. It is not a
 
 Start with the [receiver instructions](https://github.com/yutashx/context-orbit-server#requirements-and-install). Use HTTPS for normal operation; an encrypted tunnel you operate, such as a Tailscale tailnet, can protect private HTTP. Private IPv4/CGNAT HTTP is accepted by the app without an extra opt-in; public HTTP is rejected. HTTP itself is unencrypted. The receiver must remain available when you want transfer to proceed. The phone can retain records while it is unavailable, but large imports and long offline periods need sufficient free space.
 
-See the App Store listing for the current price and availability. Receiver hosting and backups are not included in the app purchase. Read the receiver prerequisite before purchasing. There is no developer cloud, app account or integrated AI.
+Receiver hosting and backups are not included in the app purchase. Read the receiver prerequisite before purchasing. There is no developer cloud, app account or integrated AI.
 
 ## First setup
 
