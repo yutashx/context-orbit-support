@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+  {% if page.lang == 'ja' %}
+  <link rel="alternate" hreflang="ja" href="{{ page.permalink | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ page.translation_url | absolute_url }}">
+  {% else %}
+  <link rel="alternate" hreflang="en" href="{{ page.permalink | absolute_url }}">
+  <link rel="alternate" hreflang="ja" href="{{ page.translation_url | absolute_url }}">
+  {% endif %}
+</head>
+<body>
+  {% if page.lang == 'ja' %}
+  <a class="skip-link" href="#content">本文へ移動</a>
+  <header>
+    <a class="site-title" href="{{ '/ja/' | relative_url }}">ContextOrbit</a>
+    <nav aria-label="メインナビゲーション">
+      <a href="{{ '/ja/support/' | relative_url }}">サポート</a>
+      <a href="{{ '/ja/privacy/' | relative_url }}">プライバシー</a>
+      <a href="https://github.com/yutashx/context-orbit-server">参考サーバー実装</a>
+      <a href="{{ page.translation_url | relative_url }}" lang="en" hreflang="en">English</a>
+    </nav>
+  </header>
+  {% else %}
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header>
+    <a class="site-title" href="{{ '/' | relative_url }}">ContextOrbit</a>
+    <nav aria-label="Main navigation">
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="https://github.com/yutashx/context-orbit-server">Reference receiver</a>
+      <a href="{{ page.translation_url | relative_url }}" lang="ja" hreflang="ja">日本語</a>
+    </nav>
+  </header>
+  {% endif %}
+  <main id="content">{{ content }}</main>
+  <footer>
+    {% if page.lang == 'ja' %}
+    ContextOrbit アプリの案内 · <a href="https://github.com/yutashx/context-orbit-support/issues">問い合わせ・不具合報告</a>
+    {% else %}
+    ContextOrbit app documentation · <a href="https://github.com/yutashx/context-orbit-support/issues">Contact and app issues</a>
+    {% endif %}
+  </footer>
+</body>
+</html>

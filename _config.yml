@@ -1,0 +1,11 @@
+title: ContextOrbit
+url: https://yutashx.github.io
+baseurl: /context-orbit-support
+markdown: kramdown
+kramdown:
+  input: GFM
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
